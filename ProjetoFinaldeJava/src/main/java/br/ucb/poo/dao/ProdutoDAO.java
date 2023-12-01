@@ -92,10 +92,9 @@ public void salvarProduto(Produto produto) {
             if (produto != null) {
                 transaction = session.beginTransaction();
     
-                // Verifica se o produto é uma instância de Medicamento
+                
                 if (produto instanceof Medicamento) {
-                    // Lógica específica para exclusão de medicamento
-                    // (se necessário)
+                    
                 }
     
                 session.delete(produto);
